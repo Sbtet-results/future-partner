@@ -1,0 +1,207 @@
+<!-- Created by Code Ninja -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+p{
+	margin-top: 0px;
+	text-align: center;
+	color:blue;
+	font-size: 50px;
+	text-shadow: 0 0 2px black;
+}
+#name{
+	margin:0;
+	padding:10px;
+	width:49%;
+	height:30px;
+	font-size:20px;
+	border: 1px solid black;
+	position: relative;
+	left:80px;
+	border-radius:8px;
+   
+}
+#gender{
+	margin:0;
+	padding:0;
+	width:55%;
+	height:50px;
+	font-size:20px;
+	border: 1px solid black;
+	margin-top:20px;
+	position: relative;
+	left:80px;
+	border-radius:8px;
+	padding:10px;
+	
+}
+#submit{
+	width:55%;
+	height:30px;
+	font-size:20px;
+	margin-top:10px;
+	position: relative;
+	left:80px;
+	border-radius:10px;
+	padding-bottom:10px;
+	color:white;
+	background-color:#0078ff;
+}
+#input{
+	padding:0;
+	margin:0;
+	width:80px;
+	height:30px;
+	position: relative;
+	left:70px;
+	border-radius:8px;
+	padding:10px;
+}
+#output{
+	border:1px solid black ;
+	width: 140px;
+	height:200px;
+	padding:0;
+	margin:0;
+	position:relative;
+	top:30px;
+	left:30px;
+	border-radius:8px;
+}
+#img{
+
+	border:1px solid black ;
+	width: 140px;
+	height:200px;
+	padding:0;
+	margin:0;
+	position:relative;
+	top:30px;
+	left:40px;
+	border-radius:8px;
+}
+
+
+</style>
+
+
+
+	</head>
+	<body onload="myfuntion()">
+	<div>
+	<p>future partner</p>
+	</div>
+	<div>
+	<input type="name" id="name" placeholder="enter your name" >
+<br />
+   <select id="gender">
+   <option>gender</option>
+   <option>male</option>
+   <option>female</option>
+   </select>
+  <br />
+  <input type="file" accept="image/*" onchange="loadFile(event)" id="input">
+<br />
+   <input type="submit" id="submit" name="submit" value ="FIND PARTNER" onclick="check()">
+   
+</div>
+	
+<img id="output"/>
+<img id="img"/>
+
+
+<script>
+
+
+function myfuntion(){
+	alert("enter your name😍, gender😂, your pic😘 ");
+};
+
+
+  var loadFile = function(event){
+varoutput=document.getElementById("output");
+output.src=URL.createObjectURL(event.target.files[0]);
+	output.onload = function() {
+	  URL.revokeObjectURL(output.src) // free memory
+	}
+  };
+  
+  
+  
+  
+  function sleep(ms) {
+	 return new Promise(resolve => setTimeout(resolve, ms));
+   }
+   async function change(name,gender) {
+   if(gender=="female"){
+	 var arr =["https://i.ibb.co/ry8j9Qx/AF1-EC2-E4-379-F-418-E-B9-DD-4-CFF3-DABE129.jpg","https://i.ibb.co/VH2wVqR/3484-FB4-A-4-C08-429-F-A7-AC-0-DE3-A9-E3-F2-F8.jpg","https://i.ibb.co/PjSn5wB/97-A3-BFA0-2554-4-BFD-AC33-AA87850-BB2-E3.jpg","https://i.ibb.co/sFkrwQ8/2-DE27-D71-741-D-4-F25-9552-297-EF851-E860.jpg","https://i.ibb.co/8czxWM1/5-D219-B74-D3-D8-4-B77-8-E59-91-A4-DF50-B7-E8.jpg","https://i.ibb.co/xL0x1DW/BBFB1-D94-6-C0-F-4-A63-A6-D5-369758363571.jpg" 
+,"https://i.ibb.co/dbhb9nH/6333-D46-C-F54-C-46-C7-B317-F08-DE120-EE07.jpg","https://i.ibb.co/0BgNv3F/3-FD2-BD9-B-7269-4653-AB7-D-4-D0-CD0-D9-CAE8.jpg","https://i.ibb.co/rbZdCzf/838-FC07-A-2450-4012-ADB6-A3-B89429-F8-BC.jpg","https://i.ibb.co/8xzMFYy/A8-BD74-EE-807-B-477-F-AA76-F759-DA59-D9-C2.jpg","https://i.ibb.co/crG6tNv/5-E579370-39-EA-4-B71-BC9-E-AB473481-CC89.jpg","https://i.ibb.co/jGxzcz6/23-F95-F42-0-F86-4-C1-A-9924-891-F02-DABE49.jpg","https://i.ibb.co/rc6dq4D/EC86-E87-E-E431-4650-AA76-AF70-FA60-BC6-E.jpg","https://i.ibb.co/ZzM7mVC/F5-BA0211-EA2-E-464-C-821-C-DA5-AD1-BBB5-CB.jpg"];
+}
+else{
+
+var arr =["https://i.ibb.co/BySwrQc/264-ACFB5-BA71-4-C78-9826-D1-AFD72-A6-A04.jpg","https://i.ibb.co/jfkM131/F31849-DD-2278-4246-83-B4-AF04-B778-A9-BE.jpg","https://i.ibb.co/S03Wg8B/9-F5-D5-CC3-54-D9-4776-8-FA6-B2915912929-B.jpg","https://i.ibb.co/VggDLBf/D5-E8-BF7-F-57-ED-4-D06-A078-CD2-EC87-AF189.jpg","https://i.ibb.co/qgJv7yv/4851-ECDE-1-A22-4322-849-E-F571-ABAE0-FFB.jpg","https://i.ibb.co/JvkhkZg/E1-E58-F91-2-B18-4-A67-98-D5-7-CFE4-D4437-F3.jpg","https://i.ibb.co/VSD9917/D3-C59664-77-C6-4-E25-A2-D9-729352570584.jpg","https://i.ibb.co/DwH2qBt/BCDDEAE8-7744-4404-910-B-863538-C92425.jpg","https://i.ibb.co/09Jp21J/DF772-C74-3-F88-4-CA1-B3-B6-B3-D4-A5-E3997-F.jpg","https://i.ibb.co/FJWfZ5H/CC75-C2-D6-4405-4-E51-B652-16-A92-BF5-A2-B3.jpg","https://i.ibb.co/DYHr9CT/4-CC9-E0-E3-3-A64-46-F8-82-B1-F5-E9-D235-ED6-E.jpg","https://i.ibb.co/jTdstL5/2-C6-F4-FF7-F026-4-C3-E-8554-6859-C66100-D6.jpg","https://i.ibb.co/mqRyMcZ/1302-F86-D-48-CD-401-E-A8-DA-7152-EBC79850.jpg","https://i.ibb.co/Z6VpqCV/3-EC57-F81-C1-AD-4491-B0-AF-B9-E4-F490-F615.jpg"];
+	
+}
+	 for (let j = 1; j <4 ; j++){
+	  for (let i = 0; i <14 ; i++) {		
+		 await sleep(100);
+		 var img=document.getElementById("img").src=arr[i];
+}
+}
+	  
+if(name=="sravani" || name=="Sravani"){
+	img=document.getElementById("img").src="https://i.ibb.co/bby6jv7/516-FCAD0-77-AB-4-F36-9-E0-B-B83-FF39-D976-D.jpg";
+}
+
+else if(name=="sri ramya" || name=="Sri ramya"){
+img=document.getElementById("img").src="https://i.ibb.co/bby6jv7/516-FCAD0-77-AB-4-F36-9-E0-B-B83-FF39-D976-D.jpg";
+}
+
+else{
+
+
+var num=Math.floor(Math.random() * 14);
+
+img=document.getElementById("img").src=arr[num];
+	
+}
+
+
+	
+}
+
+
+
+
+function check(){
+var name=document.getElementById("name").value;
+
+var gender=document.getElementById("gender").value;
+if(name != "" && gender!=""){
+   if (gender !="gender"){
+	change(name,gender);
+	}
+	else{
+	alert("please enter gender😘");
+		
+	}
+}
+else{
+	alert("please enter name and gender😘");
+}
+
+
+}
+  
+  
+</script>
+	
+	</body>
+</html>
